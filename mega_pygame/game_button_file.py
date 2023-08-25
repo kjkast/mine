@@ -1,13 +1,12 @@
-import menu
 import pygame as pg
 
 class game_button:
     
     
 
-    def __init__(self, file_name):
-        self.image = pg.image.load(f)
-        self.screen = menu.screen
+    def __init__(self, file_name, screen):
+        self.image = pg.Surface.convert(pg.image.load(file_name))
+        self.screen = screen
         return
 
     def get_image(self):

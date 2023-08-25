@@ -1,6 +1,6 @@
 import sys
 import pygame as pg
-import game_button_file
+from game_button_file import game_button
 
 pg.init()
 size = width, height = 600, 600
@@ -8,7 +8,7 @@ screen = pg.display.set_mode(size)
 screen = screen.fill((255, 255, 255))
 pg.display.set_caption("Menu")
 
-tictactoe = game_button_file.game_button("tictactoeboard.png")
+tictactoe = game_button("tictactoeboard.png", screen)
 t = screen.blit(tictactoe.get_image(), (25, 50))
 
 font = pg.font.Font('freesansbold.ttf', 20)
