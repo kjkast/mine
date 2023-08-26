@@ -13,7 +13,7 @@ pg.display.set_caption("Menu")
 
 # tictactoe button 
 tictac_location = (25, 50)
-tictactoe = game_button("tictactoeboard.png", screen)
+tictactoe = game_button(screen, "tictactoeboard.png")
 smaller_tictac = pg.transform.scale(tictactoe.get_image(), (50, 40))
 t_rect = smaller_tictac.get_rect(topleft = tictac_location)
 screen.blit(smaller_tictac, tictac_location)
